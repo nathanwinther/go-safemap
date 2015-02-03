@@ -13,7 +13,9 @@ type SafeMap struct {
 }
 
 func New() *SafeMap {
-    return &SafeMap{m: make(map[string] string)}
+    return &SafeMap{
+        m: make(map[string] string),
+    }
 }
 
 func (s *SafeMap) Dump(w io.Writer) {
